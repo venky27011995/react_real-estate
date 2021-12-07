@@ -5,7 +5,6 @@ import {baseUrl, fetchApi} from '../utils/fetchApi'
 import Property from '../components/Property'
 
 export default function Home({propertyForRent,propertyForSale}) {
-  console.table("propertyForRent:",propertyForRent,"propertyForSale:",propertyForSale)
 
   const Banner = ({purpose,title1,title2,desc1,desc2,buttonText,linkName,imageUrl}) => (
     <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="10">

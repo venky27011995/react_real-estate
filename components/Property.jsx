@@ -13,7 +13,7 @@ const Property = ({
     }
 }) => (
 
-    <Link href={`property/${externalID}`} passHref>
+    <Link href={`/property/${externalID}`} passHref>
         <Flex flexWrap="wrap" w="420px" p="5" paddingTop="0" justifyContent="flex-start" cursor="pointer">
             <Box>
                 <Image 
@@ -38,7 +38,7 @@ const Property = ({
                 <Flex alignItems="center" p="1" justifyContent="space-between" w="250px" color="blue.400">
                     {rooms} <FaBed /> | {baths} <FaBath /> | {millify(area)} sqft <BsGridFill />
                 </Flex>
-                <Text fontSize="lg" title={title}>
+                <Text fontSize="md" title={title}>
                     {title.length > 30 ? `${title.substring(0,30)}...`:title}
                 </Text>
             </Box>
